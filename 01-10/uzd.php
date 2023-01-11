@@ -13,33 +13,49 @@
 
 
 
-$arr = ["a", "b", "c"];
-var_dump($arr);
+// $arr = ["a", "b", "c"];
+// var_dump($arr);
 
+// echo '<br>';
+
+// echo $arr[0] . ' ' . $arr[1] . ' ' . $arr[2];
+
+// echo '<br>';
+
+// $arr[] = ["d"];
+
+// echo $arr[0] . ' + ' . $arr[1]. ', ' . $arr[2] . ' + ' . $arr[3];
+
+// echo '<br>';
+
+// $arr2 = [2, 5, 3, 9];
+
+// $result = ($arr2[0] * $arr2[1]) + ($arr2[2] * $arr2[3]);
+
+// echo $result;
+
+// echo '<br>';
+
+// $arr3 = [];
+
+// for ($i=1; $i <= 5; $i++) { 
+//     $arr3[$i] = $i;
+// }
+
+// var_dump($arr3);
+
+
+
+$arr = [
+    'lt'=>["Pirmadinis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis","Sekmadienis"],
+    'en'=>['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday', 'Sunday'],
+];
+
+echo $arr['lt'][0];
+echo '<br>';
+echo $arr['en'][2];
 echo '<br>';
 
-echo $arr[0] . ' ' . $arr[1] . ' ' . $arr[2];
+$lang = 'lt';
 
-echo '<br>';
-
-$arr[] = ["d"];
-
-echo $arr[0] . ' + ' . $arr[1]. ', ' . $arr[2] . ' + ' . $arr[3];
-
-echo '<br>';
-
-$arr2 = [2, 5, 3, 9];
-
-$result = ($arr2[0] * $arr2[1]) + ($arr2[2] * $arr2[3]);
-
-echo $result;
-
-echo '<br>';
-
-$arr3 = [];
-
-for ($i=1; $i <= 5; $i++) { 
-    $arr3[$i] = $i;
-}
-
-var_dump($arr3);
+echo $arr[$lang][date('N')-1];
