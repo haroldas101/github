@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // $name = 'Haroldas';
 // $age = 24;
@@ -47,8 +47,8 @@
 
 
 $arr = [
-    'lt'=>["Pirmadinis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis","Sekmadienis"],
-    'en'=>['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday', 'Sunday'],
+    'lt' => ["Pirmadinis", "Antradienis", "Trečiadienis", "Ketvirtadienis", "Penktadienis", "Šeštadienis", "Sekmadienis"],
+    'en' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
 ];
 
 echo $arr['lt'][0];
@@ -58,4 +58,4 @@ echo '<br>';
 
 $lang = 'lt';
 
-echo $arr[$lang][date('N')-1];
+echo $arr[$lang][date('N') - 1];
